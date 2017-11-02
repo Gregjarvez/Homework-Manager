@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Homework Manager</title>
+  <meta name="description" content="Homework Manager | Javascript Application">
+  <meta name="author" content="Depender Sethi">
+
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+  <main>
+      <div id="header">
+      <h2>Homework Manager</h2>
+      </div>
+      <div class="container">
+        <div class="form">
+        <form action="#" id="myForm">
+          <div class="input-field col s12 inline">
+            <select name="subjects" id="subjects">
+              <option disabled>Subjects</option>
+              <option value="science">Science</option>
+              <option value="maths">Math</option>
+            </select>
+            </div>
+            <div class="input-field col s12 inline">
+            <input type="text" id="assName">
+            </div>
+          <div class="input-field col s12 inline">
+            <input type="submit" value="Enter" class="mybtn" id="submitBtn">
+          </div>
+          </form>
+        </div>
+
+        <ul id="assignments">
+        </ul>
+    </div>
+  </main>
+
+
+  <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="scripts/main.js"></script>
+  <script>
+  $(document).ready(function() {
+   $('select').material_select();
+  });
+  </script>
+</body>
+</html>

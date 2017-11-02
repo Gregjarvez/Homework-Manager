@@ -1,0 +1,104 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+#header{
+  text-align: center;
+  background-image: url("../img/banner-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px 0px;
+}
+
+h2{
+  color: #fff;
+  font-size: 34px;
+  font-weight: 300;
+}
+
+.container{
+  max-width: 960px;
+  width:100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+form{
+  display:inline-block;
+}
+
+.input-field{
+  margin-right: 1em;
+}
+
+.input-field:nth-child(3){
+  margin-right: 0
+}
+
+.mybtn, .mybtn:active{
+  padding: 10px 20px;
+  border: 0;
+  background-color: #00b26d;
+  color: #fff;
+  text-transform: uppercase;
+  transition: .3s;
+}
+
+.mybtn:hover{
+  background-color: #03c9a9;
+}
+
+#assignments > li{
+  width: 640px;
+  display: inline-block;
+  transition: all .3s;
+  cursor: pointer;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+#assignments > li:hover button {
+  left: 89%;
+}
+
+#assignments > li:hover{
+  -webkit-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.3);
+}
+
+li p{
+  padding: 30px 0 30px 85px;
+  display:inline-block;
+  background-repeat: no-repeat;
+  background-position: left center;
+  margin:0;
+  color: #474747;
+  font-size: 18px;
+  width: 390px;
+}
+
+li.science p{
+  background-image: url("../img/science-ico.png");
+}
+
+li.maths p{
+  background-image: url("../img/maths-ico.png");
+}
+
+.delete, .delete:active, .delete:visited{
+  border: 0;
+  padding:33px;
+  position: absolute;
+  left: 100%;
+  background-color: #D64541;
+  color: #fff;
+  transition: .3s;
+}
+
+.delete:hover{
+  background-color: #96281B;
+}
